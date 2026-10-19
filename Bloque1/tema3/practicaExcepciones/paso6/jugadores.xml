@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE teams [
+<!ELEMENT teams (team+)>
+<!ELEMENT team (name, players)>
+<!ATTLIST team city CDATA #REQUIRED>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT players (player+)>
+<!ELEMENT player (playerName, position, nationality, number)>
+<!ELEMENT playerName (#PCDATA)>
+<!ELEMENT position (#PCDATA)>
+<!ELEMENT nationality (#PCDATA)>
+<!ELEMENT number (#PCDATA)>
+]>
+
+<teams>
+    <team city="Córdoba">
+        <name>Córdoba CF</name>
+        <players>
+            <player>
+                <playerName>Iker Alvarez</playerName>
+                <position>Portero</position>
+                <nationality>España</nationality>
+                <number>13</number>
+            </player>
+            <player>
+                <playerName>Diego Percan</playerName>
+                <position>Delantero</position>
+                <nationality>España</nationality>
+                <number>9</number>
+            </player>
+        </players>
+    </team>
+    <team city="Málaga">
+        <name>Málaga CF</name>
+        <players>
+            <player>
+                <playerName>Alfonso Herrero</playerName>
+                <position>Portero</position>
+                <nationality>España</nationality>
+                <number>1</number>
+            </player>
+            <player>
+                <playerName>Carlos Chupe</playerName>
+                <position>Delantero</position>
+                <nationality>España</nationality>
+                <number>9</number>
+            </player>
+        </players>
+    </team>
+</teams>
