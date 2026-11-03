@@ -12,11 +12,11 @@ public class Ejercicio2 {
 
             FileInputStream fis = new FileInputStream(foto1);
             FileOutputStream fos = new FileOutputStream(foto2);
-            int bait;
+            int data;
             int contador = 0;
 
-            while ((bait = fis.read())>-1) {
-                fos.write(bait);
+            while ((data = fis.read())>-1) {
+                fos.write(data);
                 contador++;
             }
 

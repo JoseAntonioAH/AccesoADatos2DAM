@@ -13,10 +13,10 @@ public class Ejercicio1 {
             FileReader fr = new FileReader(archivo1);
             FileWriter fw = new FileWriter(archivo2);
 
-            int caracter;
+            int data;
 
-            while ((caracter = fr.read())>-1) {
-                fw.write(caracter);
+            while ((data = fr.read())>-1) {
+                fw.write(data);
             }
 
             fr.close();
