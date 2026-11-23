@@ -162,12 +162,12 @@ public class Main {
     //         veras el error en pantalla y el programa vuelve al menu.
     // ---------------------------------------------------------------
     static void cambiarPortatil(Connection con, String email, int codigo) throws SQLException {
-      String sql = "update alumno set codigo_pc = ? where email = ?";
-      try(PreparedStatement ps = con.prepareStatement(sql)){
-        ps.setInt(1, codigo);
-        ps.setString(2, email);
-        System.out.println("Se han actualizado "+ps.executeUpdate()+" filas");
-      }
+        String sql = "update alumno set codigo_pc = ? where email = ?";
+        try(PreparedStatement ps = con.prepareStatement(sql)){
+            ps.setInt(1, codigo);
+            ps.setString(2, email);
+            System.out.println("Se han actualizado "+ps.executeUpdate()+" filas");
+        }
     }
 
     // ---------------------------------------------------------------
